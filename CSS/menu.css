@@ -1,0 +1,115 @@
+.logo {
+    padding-top: 2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuSection {
+    font-size: 2em;
+    margin-top: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 1em;
+    background-color: rgba(62, 74, 61, 1);
+    color: white;
+    text-align: center;
+}
+
+.menuSection p {
+    font-size: 0.5em;
+    margin: 0;
+}
+
+.menuSection a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.5em;
+}
+
+.menuSection i {
+    margin-right: 0.5em;
+}
+
+.desktopmenu {
+    display: none;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menuSection {
+        margin-left: 5%;
+        width: 60%;
+        background-color: #EBF4EA;
+        color: black;
+        font-size: 1.5em;
+    }
+    .menuSection a {
+        color: black;
+    }
+    label .hamburger,
+    label .menu {
+        display: none;
+    }
+    .logo {
+        margin-left: 1em;
+        width: 300px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(62, 74, 61, 1);
+    display: block;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}

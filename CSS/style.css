@@ -1,0 +1,216 @@
+    html {
+        background-color: white;
+    }
+    
+    body {
+        max-width: 1200px;
+        margin-inline: auto;
+        background-color: #EBF4EA;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 2em;
+        letter-spacing: 0.01em;
+    }
+    
+    h1,
+    h2 {
+        text-align: center;
+    }
+    
+    img {
+        display: block;
+        width: 50%;
+        margin-inline: auto;
+    }
+    
+    .content {
+        padding: 16px;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .sticky+.content {
+        padding-top: 60px;
+    }
+    
+    #infoStart {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #infoStart img {
+        display: block;
+        margin-inline: auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 100%;
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+    
+    #infoStart h3 {
+        text-align: center;
+        margin: 0;
+    }
+    
+    #infoStart p {
+        background-color: #F7F9F7;
+        width: 60%;
+        margin-inline: auto;
+        padding: 1.2em;
+        font-size: 1.2em;
+    }
+    
+    #latestNews {
+        margin-top: 5em;
+    }
+    
+    .newsCard {
+        width: 80%;
+        margin-inline: auto;
+        background: #F7F9F7;
+        border-radius: 5px;
+        margin-bottom: 3em;
+        padding-top: 1.5em;
+        padding-bottom: 0.5em;
+    }
+    
+    .newsCard img {
+        display: block;
+        margin-inline: auto;
+        width: 70%;
+        max-height: 400px;
+        border-radius: 20px;
+    }
+    
+    .newsCard p {
+        width: 80%;
+        margin-inline: auto;
+    }
+    
+    .newsCard h3 {
+        margin-left: 10%;
+        font-weight: 500;
+    }
+    
+    .newsCard a {
+        display: block;
+        margin-right: 10%;
+        text-align: right;
+        color: #6D4027;
+        text-decoration: none;
+    }
+    
+    .newsCard i {
+        margin-right: 0.5em;
+    }
+    
+    #instagram img {
+        width: 60%;
+        max-height: 400px;
+        margin-bottom: 2em;
+        border-radius: 20px;
+        display: block;
+        margin-inline: auto;
+    }
+    
+    .fa {
+        padding: 1em;
+        min-width: 1em;
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 100%;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    
+    footer {
+        color: white;
+        text-align: center;
+    }
+    
+    footer h4 {
+        font-size: 2em;
+        font-weight: 300;
+    }
+    
+    .footerSocial {
+        margin-bottom: 2em;
+    }
+    
+    footer p {
+        font-size: 1.1em;
+    }
+    
+    footer a {
+        color: white;
+        text-decoration: none;
+        margin-right: 0.6em;
+        font-size: 1em;
+    }
+    
+    footer i {
+        margin-right: 0.3em;
+    }
+    
+    .footerGreen {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(62, 74, 61, 1);
+        padding: 1em;
+    }
+    
+    .footerBlack {
+        padding: 0.3em;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+    /* Slideshow container */
+    
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    /* The dots/bullets/indicators */
+    
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .mySlides img {
+        width: 100%;
+        max-height: 600px;
+    }
