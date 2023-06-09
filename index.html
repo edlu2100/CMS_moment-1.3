@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Skog AB" content="width=device-width, initial-scale=1.0">
     <title>Skog AB</title>
-    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
     <link rel="stylesheet" href="CSS/hamburger.css">
 
     <script src="https://kit.fontawesome.com/11536f6220.js" crossorigin="anonymous"></script>
@@ -41,7 +42,7 @@
 
 
     </nav>
-    <div class="navbar">
+    <div id="navbar">
         <ul>
             <li> <a href="index.html">Startsida</a> </li>
             <li> <a href="news,html">Nyheter</a></li>
@@ -49,6 +50,7 @@
             <li> <a href="contact.html">Kontakt</a> </li>
         </ul>
     </div>
+
 
     <div class="slideshow-container">
 
@@ -64,9 +66,9 @@
         </div>
 
     </div>
-    <br>
 
-    <div style="text-align:center">
+
+    <div id="dotdiv">
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
@@ -145,31 +147,9 @@
 
     </footer>
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i <
-                slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i <
-                dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 6000);
-        }
-    </script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/slides.js"></script>
 
 
 </body>
