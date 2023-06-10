@@ -1,5 +1,12 @@
 .logo {
-    padding-top: 2em;
+    padding-top: 1.5em;
+    margin-bottom: 1.5em;
+    display: block;
+    margin-inline: auto;
+}
+
+.logo:hover {
+    opacity: 0.7;
 }
 
 nav {
@@ -8,24 +15,19 @@ nav {
 }
 
 .menuSection {
-    font-size: 2em;
-    margin-top: 0.8em;
-    padding-top: 0.8em;
-    padding-bottom: 1em;
+    padding: 1em;
     background-color: rgba(62, 74, 61, 1);
     color: white;
     text-align: center;
 }
 
-.menuSection p {
-    font-size: 0.5em;
-    margin: 0;
-}
-
 .menuSection a {
     color: white;
     text-decoration: none;
-    font-size: 0.5em;
+}
+
+.menuSection a:hover {
+    color: rgb(157, 157, 157);
 }
 
 .menuSection i {
@@ -36,6 +38,7 @@ nav {
     visibility: hidden;
     overflow: hidden;
     background-color: rgba(62, 74, 61, 1);
+    z-index: 500;
 }
 
 #navbar ul {
@@ -55,8 +58,7 @@ nav {
 }
 
 #navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    color: rgb(157, 157, 157);
 }
 
 #navbar a.active {
@@ -78,20 +80,21 @@ nav {
     padding-top: 60px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) {
     #navbar {
         visibility: visible;
+        width: 100%;
+        margin: 0;
     }
     nav {
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .menuSection {
         margin-left: 5%;
-        width: 60%;
+        width: 50%;
         background-color: #EBF4EA;
         color: black;
-        font-size: 1.5em;
     }
     .menuSection a {
         color: black;
@@ -106,5 +109,34 @@ nav {
     }
     .menu {
         display: none;
+    }
+    #navbar ul {
+        width: 70%;
+        margin-inline: auto;
+        display: flex;
+    }
+    .logo {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    #navbar ul {
+        width: 50%;
+    }
+    .logo {
+        margin: 0;
+        padding: 1em;
+    }
+    .menuSection {
+        margin-left: 30%;
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #navbar ul {
+        width: 40%;
     }
 }
