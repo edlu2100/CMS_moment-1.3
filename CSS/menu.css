@@ -107,7 +107,8 @@ nav {
         margin-left: 1em;
         width: 300px;
     }
-    .menu {
+    .menu,
+    .hamburger {
         display: none;
     }
     #navbar ul {

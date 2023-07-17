@@ -22,6 +22,10 @@
     background-color: #EBF4EA;
 }
 
+.newsside a p:hover {
+    color: black;
+}
+
 .textbrown {
     color: #6D4027;
 }
@@ -93,12 +97,6 @@
     font-weight: 400;
 }
 
-@media screen and (min-width: 1200px) {
-    #newspage {
-        width: 80%;
-    }
-}
-
 #newssite {
     display: flex;
     flex-direction: column;
@@ -110,7 +108,7 @@
     background-color: #F7F9F7;
 }
 
-.articleImg {
+.articleImg img {
     margin-inline: auto;
     width: 80%;
     display: block;
@@ -146,7 +144,7 @@
 
 .newsSocial {
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 1em;
 }
@@ -159,13 +157,17 @@
     width: 2em;
 }
 
+.newsSocial a img:hover {
+    opacity: 0.5;
+}
+
 @media screen and (min-width: 800px) {
     #newssite {
         flex-direction: row;
     }
     .article {
-        margin-left: 2em;
-        width: 50%;
+        margin-left: 1em;
+        width: 60%;
         max-width: 800px;
     }
 }
@@ -185,16 +187,15 @@
     }
     .newsside {
         width: 70%;
-        max-width: 350px;
+        max-width: 300px;
         height: 60%;
-        margin-top: 0;
     }
     #distansright {
         margin: 2em;
     }
     .newssize {
-        width: 80%;
-        max-width: 800px;
+        width: 90%;
+        max-width: 900px;
     }
     .searchbar input,
     .searchbar button {
@@ -203,8 +204,28 @@
 }
 
 @media screen and (min-width: 1000px) {
+    .article {
+        margin-right: 1em;
+        width: 75%;
+    }
+    .newsside {
+        margin-right: 0;
+    }
     #newssite {
         width: 1000px;
         margin-inline: auto;
+    }
+    .article p {
+        width: 70%;
+        line-height: 1.8em;
+    }
+    .articletitel h1 {
+        margin: 30px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #newspage {
+        width: 80%;
     }
 }

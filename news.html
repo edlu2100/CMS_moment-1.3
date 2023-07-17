@@ -31,7 +31,7 @@
         </label>
 
 
-        <a href=""><img class="logo" src="images/Nytt projekt (9).svg" alt=""></a>
+        <a href="index.html"><img class="logo" src="images/logo.svg" alt="skog ab logga"></a>
         <div class="menuSection">
             <p>Behöver du hjälp? Vi tar hand om din skog!</p>
             <a href="tel:012345678"><i class="fa-solid fa-phone"></i>012 34 56 78</a>
@@ -63,10 +63,13 @@
             <div class="searchdiv">
                 <p>Sök</p>
             </div>
-            <div class="searchbar">
+
+            <form class="searchbar" action="">
                 <input type="text">
                 <button>Sök</button>
-            </div>
+            </form>
+
+
 
 
             <h2>Senaste Nyheterna</h2>
@@ -77,13 +80,13 @@
                 </a>
             </div>
             <div class="news">
-                <a href="">
+                <a href="stumpmilling.html">
                     <p>Stubbfräsning</p>
                     <p class="textbrown">Läs mer<i class="fa-solid fa-arrow-right-long"></i></p>
                 </a>
             </div>
             <div class="news lastnews">
-                <a href="">
+                <a href="grasscutting.html">
                     <p>Gräsklippning</p>
                     <p class="textbrown">Läs mer<i class="fa-solid fa-arrow-right-long"></i></p>
                 </a>
@@ -92,7 +95,10 @@
 
         <section>
             <div class="newsCard newssize">
-                <img src="images/07314568.jpg" alt="Man som fäller träd">
+                <picture>
+                    <source type="image/jpg" srcset="images/2_1000.webp">
+                    <img src="images/2_1000.jpg" alt="man som såga träd">
+                </picture>
                 <div>
                     <h3>Trädfällning</h3>
                     <p><i class="fa-regular fa-calendar"></i>29-05-23</p>
@@ -102,23 +108,29 @@
 
             </div>
             <div class="newsCard newssize">
-                <img src="images/stubbfrasning.jpg" alt="Man som fräser bort stubbe">
+                <picture>
+                    <source type="image/jpg" srcset="images/stubbfrasning1000.webp">
+                    <img src="images/stubbfrasning1000.jpg" alt="man som fräser bort stubbe">
+                </picture>
                 <div>
                     <h3>Stubbfräsning</h3>
                     <p><i class="fa-regular fa-calendar"></i>29-05-23</p>
                     <p>Vi fräser alla sorter av stubbar stora som små, även stubbar från häckar och buskar går bra att fräsa.
                     </p>
-                    <a href="">Läs mer<i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="stumpmilling.html">Läs mer<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
             <div class="newsCard newssize">
-                <img src="images/DSC_0023.jpg" alt="Man som fräser bort stubbe">
+                <picture>
+                    <source type="image/jpg" srcset="images/4_1000.webp">
+                    <img src="images/4_1000.jpg" alt="man som såga träd">
+                </picture>
                 <div>
                     <h3>Gräsklippning</h3>
                     <p><i class="fa-regular fa-calendar"></i>29-05-23</p>
                     <p>Vi klipper erat gräs. Alla tomttyper och storlekar. Vi har utrustningen för att klippa de mest utmanande tomterna.
                     </p>
-                    <a href="">Läs mer<i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="grasscutting.html">Läs mer<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </section>
@@ -127,17 +139,20 @@
 
     <footer>
         <div class="footerGreen">
-            <h4>SKOG AB</h4>
+            <h3>SKOG AB</h3>
             <div class="footerSocial">
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
             </div>
-            <p>Behöver du hjälp? Vi tar hand om din skog!</p>
-            <div class="callmail">
-                <a href="tel:012345678"><i class="fa-solid fa-phone"></i>012 34 56 78</a>
-                <a href="mailto:contact@skogab.se"><i class="fa-regular fa-envelope"></i>contact@skogab.se</a>
+            <div class="footertext">
+                <p>Behöver du hjälp? Vi tar hand om din skog!</p>
+                <div class="callmail">
+                    <a href="tel:012345678"><i class="fa-solid fa-phone"></i>012 34 56 78</a>
+                    <a href="mailto:contact@skogab.se"><i class="fa-regular fa-envelope"></i>contact@skogab.se</a>
+                </div>
             </div>
+
 
         </div>
         <div class="footerBlack">
